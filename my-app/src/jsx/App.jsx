@@ -3,7 +3,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Section from "./Section"; 
 import Faq from "./Faq"; 
-
+import { useNavigate } from "react-router-dom";
+import Router from "./Router"; 
 
 const sectionArray = [
     {
