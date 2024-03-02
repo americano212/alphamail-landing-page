@@ -1,0 +1,135 @@
+.Header {
+    border: 1px solid gray; 
+    margin: auto; 
+    min-width: 1440px;
+    max-width: 1440px;
+    padding-left: 180px;
+    padding-right: 180px;
+
+}
+
+.Header h1 {
+    font-size: 56px; 
+}
+
+.Header p {
+    font-size: 24px;
+
+}
+
+
+.Header img{
+    width: "1372";
+    height: "1000";
+    color: transparent;
+
+}
+
+
+
+
+.Cta{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 14px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 18px;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.15);
+}
+
+
+
+
+.Section{
+    border: 1px solid gray; 
+    margin: 60px 10px; 
+    padding: 20px 10px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section p {
+    text-align: center;
+}
+
+.Section .BodyPoint{
+    height: 30px; 
+    border: 1px solid gray; 
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 1rem; 
+    width: 4.5rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 18px;
+}
+
+
+
+
+.Faq{
+    border: 2px solid gray; 
+    margin: 60px 10px; 
+}
+
+.Faq > p, h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Faq > p {
+    margin: auto auto 1rem;
+    width:2rem;
+    height:37px;
+    border: 1px solid gray; 
+    font-size: 20px; 
+    border-radius: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.Faq >h2 {
+    margin: auto auto 1rem;
+    font-size: 24px; 
+}
+
+
+.Slide{
+    text-align:left; 
+}
+
+.Slide .question{
+    font-size: 16px; 
+    margin: 5px 0px; 
+    padding: 10px; 
+}
+
+.Slide .answer{
+    font-size: 14px; 
+    margin: 5px 0px; 
+    padding: 0px 10px; 
+    border: 1px solid gray; 
+}
+
+
+
+
+.Footer {
+    border: 1px solid gray; 
+    margin: 20px 10px; 
+}
+
+.Footer li  {
+    list-style: none;
+    text-align: center;
+}
