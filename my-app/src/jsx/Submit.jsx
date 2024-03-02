@@ -1,9 +1,10 @@
-import React, { useState } from "react"; 
+import React, { useState, useEffect } from "react"; 
 import Radio from "./Radio";
 import RadioGroup from "./RadioGroup"; 
 
 function Submit() {
 
+  /*
     const [state, setState] = useState({
         name: "",
         phoneNum: "", 
@@ -11,18 +12,78 @@ function Submit() {
         need: "", 
     }); 
 
-
     function handleChange(event){
-        const {name, value} = event.target; 
-        setState((prevState)=>{
-            return {
+      const {name, value} = event.target; 
+      setState((prevState)=>{
+          return {
+          ...prevState, 
+          [name]: value
+          }
+      });
+      // console.log(name);
+      // console.log(typeof(name));
+      // console.log(value); 
+      // console.log(state.phoneNum); 
+  }
+
+
+    // 자동 하이픈 생성 돛거 
+    useEffect(() => {
+      if (state.phoneNum.length === 11) {
+        setState((prevState)=> {
+          return {
             ...prevState, 
-            [name]: value
-            }
+            phoneNum: state.phoneNum.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3'),
+        }});
+      } else if (state.phoneNum.length === 13) {
+        setState((prevState)=> {
+          return {
+            ...prevState, 
+          //하이픈이 입력되면 공백으로 변경되고 하이픈이 다시 생성됨
+            phoneNum: state.phoneNum.replace(/-/g, ''), 
+            phoneNum: state.phoneNum.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3'),
+      }});
+      }
+      return () => {}
+    }, [state.phoneNum]);
+
+*/ 
+    const [stateName, setName] = useState("");
+    const [statePhone, setPhone] = useState(""); 
+    const [stateBirth, setBirth] = useState(""); 
+
+
+    function handleName(event){
+      const {value} = event.target; 
+      setName(value); 
+  }
+
+  function handlePhone(event){
+    const {value} = event.target; 
+    setPhone(value); 
+  }
+
+  function handleBirth(event){
+    const {value} = event.target; 
+    setBirth(value); 
+  }
+
+
+    // 자동 하이픈 생성 돛거 
+    useEffect(() => {
+      if (statePhone.length === 11) {
+        setPhone(()=> {
+          return statePhone.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
         });
-        console.log(name);
-        console.log(value); 
-    }
+      } else if (statePhone.length === 13) {
+        setPhone(()=> {
+          //하이픈이 입력되면 공백으로 변경되고 하이픈이 다시 생성됨
+            return statePhone.replace(/-/g, '').replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
+      });
+      }
+      return () => {};
+    }, [statePhone]);
+
 
 
     return (
@@ -37,10 +98,10 @@ function Submit() {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        console.log(event.target.need); 
-        console.log(event.target.name); 
-        console.log(event.target.phoneNum); 
-        console.log(event.target.birth); 
+        // console.log(event.target.need); 
+        // console.log(event.target.name); 
+        // console.log(event.target.phoneNum); 
+        // console.log(event.target.birth); 
         //alert(`${event.target.contact.value}를 고르셨습니다!`);
       }}
     >
@@ -64,19 +125,19 @@ function Submit() {
 
     <div>
       <p>이름</p>
-      <input name="name" placeholder="나의 이름을 입력해주세요." onChange={handleChange} value={state.name}></input>
+      <input name="name" placeholder="나의 이름을 입력해주세요." onChange={handleName} value={stateName}></input>
       <p>Tip! 꼭 실명으로 입력해주세요.</p>
     </div>
     
     <div>
       <p>휴대폰 번호</p>
-      <input name="phoneNum" placeholder="010-0000-0000" onChange={handleChange} value={state.phoneNum} maxLength={11}></input>
+      <input name="phoneNum" placeholder="010-0000-0000" onChange={handlePhone} value={statePhone} maxLength={13}></input>
     </div>
 
     <div>
       <p>생년월일</p>
       <div>
-          <input name="birth" placeholder="생년월일 6자리" onChange={handleChange} value={state.birth} maxLength={6}></input> 
+          <input name="birth" placeholder="생년월일 6자리" onChange={handleBirth} value={stateBirth} maxLength={6}></input> 
       </div>
       <div>
           <input maxLength={1}></input>
