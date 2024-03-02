@@ -5,7 +5,7 @@ function Section(props){
 
     return (
     <div className="Section" id={props.id}>
-        <p className="BodyPoint">Point.{props.id}</p>
+        <p className="BodyPoint">Point.{props.id -1}</p>
         <h2>{props.heading}</h2>
         <p>{props.content}</p>
         <img src={props.img} alt="image" />
