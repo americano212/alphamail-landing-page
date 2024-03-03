@@ -133,3 +133,163 @@
     list-style: none;
     text-align: center;
 }
+
+
+
+
+
+
+div.Submit {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.submitName {
+    height: 100px; 
+    padding: 8px 0px; 
+    margin: 20px; 
+    margin-left: 0px;
+}
+
+.submitName .personname {
+    font-size: 13px;
+    color: rgb(181 184 183);
+}
+
+.submitName .warning {
+    font-size: 15px; 
+    color: rgb(181 184 183);
+    
+}
+
+
+.submitPhone {
+    height: 100px; 
+    padding: 8px 0px; 
+    margin: 20px; 
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+
+.submitBirthSex{
+    display: flex; 
+    flex-direction: row;
+    align-items: row;
+    gap: 4px; 
+    margin-bottom: 60px;
+}
+
+.submitBirth {
+    padding: 8px 0px; 
+}
+
+.submitPhone p { 
+    font-size: 13px; 
+    color: rgb(181 184 183);
+}
+
+.submitBirthSexParag {
+    font-size: 13px; 
+    color: rgb(181 184 183);
+}
+
+
+.submitSex {
+    padding: 8px 0px; 
+}
+
+
+.submitButton {
+    text-align: center;
+    font-size: 16px; 
+    height: 60px; 
+    width: 100%; 
+    padding: 16px; 
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 16px 0 rgba(166, 168, 5, 0.15);
+    background-color: bisque;
+    border: 0 solid; 
+    color:rgb(179, 129, 54); 
+    margin-top: 40px; 
+}
+
+
+.Submit input[type=text] {
+    font-size:24px; 
+    height: 40px; 
+    border-left-width:0; 
+    border-right-width:0; 
+    border-top-width:0; 
+    border-bottom-width:1px;
+    border-color: rgb(181 184 183);
+    outline: none; 
+    font-weight: bold;
+}
+
+.submitName input {
+}
+
+.submitPhone input {
+}
+
+.submitBirth input {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.submitSex input {
+    width:24px; 
+    text-align: center;
+}
+
+.between{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+.blackCircle{
+    font-size: 24px; 
+    color: rgb(181 184 183); 
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.backLink {
+    border: 1px solid gray; 
+}
+
+
+.RadioGroup {
+    margin-top: 20px; 
+    margin-bottom: 50px; 
+}
+
+
+
+.Submit .header {
+    height: 100px; 
+    padding: 8px 0px; 
+    margin: 20px; 
+    margin-left: 0px;
+}
+
+.Submit .text {
+
+}

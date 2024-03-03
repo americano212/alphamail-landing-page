@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Radio from "./Radio";
 import RadioGroup from "./RadioGroup"; 
 import { useNavigate } from "react-router-dom"; 
+import { useLocation } from 'react-router-dom';
+
 
 
 function Submit() {
@@ -12,7 +14,7 @@ function Submit() {
     const [statePhone, setPhone] = useState(""); 
     const [stateBirth, setBirth] = useState(""); 
     const [stateSex, setSex] = useState(""); 
-
+    
 
   /* 
     이름 state 바꾸는 함수 
@@ -90,12 +92,28 @@ function Submit() {
     }
   }
 
-  
-  const navigate = useNavigate();
 
+  /*
+    뒤로가기 핸들링 함수. 
+  */
+  const navigate = useNavigate();
   function handleClick(){
     navigate("/", { replace: true}); 
   }
+
+
+
+  /* 
+    버튼마다 id가 다름. -> 어떤 버튼을 타고 왔는지 알 수 있게끔. 
+    인자로 받은, 버튼의 id 가져오기. 
+  */ 
+  const location = useLocation();
+  const buttonId = location.state.id;
+  //console.log(buttonId); 
+
+
+
+
 
 
     // 숫자의 개수가 부족할 때, 정확한 휴대폰 번호를 입력해주세요, 정확한 생년월일을 입력해주세요 형성. 
@@ -105,26 +123,60 @@ function Submit() {
 
 
     return (
-        <div>
+        <div className="Submit">
         
-    <p onClick={handleClick}>뒤로가기 버튼</p>
+    <section>
+    <div className="header">
+    <p onClick={handleClick} className="backLink">뒤로가기 버튼</p>
 
-    <p>작통단 메일을 가장 먼저 사용해보고 싶으신가요?</p>
+    <p className="text">작통단 메일을 가장 먼저 사용해보고 싶으신가요?</p>
 
-    <p>가장 먼저 정보를 얻어보세요!</p>
+    <p className="text">가장 먼저 정보를 얻어보세요!</p>
+    </div>
+    </section>
 
-    <form
+    <form class="w-50 p-3"
       onSubmit={(event) => {
         event.preventDefault();
-        console.log(event.target.need); 
+        console.log(event.target.need.value); 
         console.log(event.target.name); 
         console.log(event.target.phoneNum); 
         console.log(event.target.birth); 
         console.log(event.target.sex); 
+        console.log(buttonId); 
         //alert(`${event.target.contact.value}를 고르셨습니다!`);
       }}
     >
-      <RadioGroup label="자동으로 스팸 메일을 분류하는 시스템이 필요하다고 생각하시나요?">
+
+    <div className="submitName">
+      <p className="personname">이름</p>
+      <input type="text" name="name" placeholder="나의 이름을 입력해주세요." onChange={handleName} value={stateName}></input>
+      <p className="warning">Tip! 꼭 실명으로 입력해주세요.</p>
+    </div>
+    
+    <div className="submitPhone">
+      <p>휴대폰 번호</p>
+      <input type="text" name="phoneNum" placeholder="010-0000-0000" onChange={handlePhone} value={statePhone} maxLength={13}></input>
+    </div>
+
+    
+    <div className="submitBirthSexParag">생년월일</div>
+    <div className="submitBirthSex">
+      <div className="submitBirth">          
+          <input type="text" name="birth" placeholder="생년월일 6자리" onChange={handleBirth} value={stateBirth} maxLength={6}></input> 
+      </div>
+      <div className="between">-</div>
+      <div className="submitSex">
+          <input type="text" name="sex" onChange={handleSex} value={stateSex} maxLength={1}></input>
+      </div>
+      <div className="blackCircle">●●●●●●</div>
+    </div>
+
+
+
+
+
+    <RadioGroup label="자동으로 스팸 메일을 분류하는 시스템이 필요하다고 생각하시나요?">
         <Radio name="need" value="100%" defaultChecked>
           매우 그렇다
         </Radio>
@@ -142,29 +194,12 @@ function Submit() {
         </Radio>
       </RadioGroup>
 
-    <div>
-      <p>이름</p>
-      <input name="name" placeholder="나의 이름을 입력해주세요." onChange={handleName} value={stateName}></input>
-      <p>Tip! 꼭 실명으로 입력해주세요.</p>
-    </div>
-    
-    <div>
-      <p>휴대폰 번호</p>
-      <input name="phoneNum" placeholder="010-0000-0000" onChange={handlePhone} value={statePhone} maxLength={13}></input>
-    </div>
 
-    <div>
-      <p>생년월일</p>
-      <div>
-          <input name="birth" placeholder="생년월일 6자리" onChange={handleBirth} value={stateBirth} maxLength={6}></input> 
-      </div>
-      <div>
-          <input name="sex" onChange={handleSex} value={stateSex} maxLength={1}></input>
-          <div>●●●●●●</div>
-      </div>
-    </div>
 
-      <button type="submit">제출</button>
+
+
+
+    <div><button className="submitButton" type="submit">제출</button></div>
     </form>
         </div>
     ); 

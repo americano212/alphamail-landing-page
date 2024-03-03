@@ -6,6 +6,8 @@ import Faq from "./Faq";
 import { useNavigate } from "react-router-dom";
 import Router from "./Router"; 
 
+
+
 const sectionArray = [
     {
         key: 2, 

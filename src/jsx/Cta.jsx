@@ -7,7 +7,7 @@ function Cta(props){
 
     function handleClick(){
         //console.log(props.id + "button clicked!");
-        navigate("/submit", { replace: true}); 
+        navigate("/submit", { replace: true , state:{id: props.id}}); 
     }
 
 

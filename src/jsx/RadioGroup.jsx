@@ -2,7 +2,7 @@ import React from "react";
 
 function RadioGroup({ label, children }) {
     return (
-      <fieldset>
+      <fieldset className="RadioGroup">
         <legend>{label}</legend>
         {children}
       </fieldset>
