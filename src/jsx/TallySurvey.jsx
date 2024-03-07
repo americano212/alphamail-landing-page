@@ -8,7 +8,7 @@ const TallySurvey = () => {
     const load = () => {
       // Load Tally embeds
       if (typeof Tally !== "undefined") {
-        Tally.loadEmbeds();
+        window.Tally.loadEmbeds();
         return;
       }
 
