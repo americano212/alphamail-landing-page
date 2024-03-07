@@ -1,0 +1,91 @@
+.Section{
+    margin: 0px; 
+    padding: 80px 0px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+
+}
+
+.Section h2 {
+    font-weight: bold;
+}
+
+.Section p {
+    text-align: center;
+    margin: 0px; 
+}
+
+.Section .BodyPoint{
+    height: 30px; 
+    border: 1px solid gray; 
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 1rem; 
+    width: 5rem; 
+    /*
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    */
+    font-size: 18px;
+}
+
+.Section img {
+    width: 520px; 
+    height: 464px; 
+    margin: 40px; 
+}
+
+
+.Section2 {
+    margin-top:0px; 
+    background-color: #fcfcfd; 
+    border-radius: 5px;
+}
+
+
+.Section2 img {
+    border-radius: 5px;
+}
+
+.Section2 button{
+    margin-top: 30px; 
+    background-color: #fcc657;
+    color: rgb(30, 30, 30); 
+    border: solid 1px rgb(200, 200, 200); 
+}
+
+
+.Section2 b {
+    color: #EEA120;
+}
+
+.Section3 { 
+    background-image: url("/public/banner-bg.png");
+}
+
+.Section3 h2 {
+    color: white; 
+}
+
+.Section3 p {
+    color: white; 
+}
+
+.Section3 img {
+    border-radius: 5px;
+}
+
+.Section3 button{
+    margin-top: 30px; 
+    background-color: #599ee9;
+    color: white; 
+    border: solid 1px rgb(20, 20, 20); 
+}
+
+.Section3 b {
+    color: #599ee9;
+}

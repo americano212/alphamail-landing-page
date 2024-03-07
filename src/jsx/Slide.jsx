@@ -1,6 +1,6 @@
 import React, {useState} from "react"; 
 import Collapse from 'react-bootstrap/Collapse';
-
+import "./Slide.css"; 
 
 function Slide(props){
 
@@ -13,7 +13,8 @@ function Slide(props){
     return (
         <div className="Slide">
             <div className="question" onClick={hanldeClick} aria-controls="example-collapse-text" aria-expanded={visible}> 
-                <b>{props.question}</b>
+                <div className="left">{props.question}</div>
+                <div className="right"></div>
             </div>
             <div className="answer hidden" >
                 <Collapse in={visible}>

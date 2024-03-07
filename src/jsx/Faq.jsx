@@ -1,5 +1,6 @@
 import React from "react";
 import Slide from "./Slide"; 
+import "./Faq.css"; 
 
 var faqArray = [
 {
@@ -37,8 +38,10 @@ var faqArray = [
 function Faq(){
     return(
     <div className="Faq">
-        <p> FAQ </p>
-        <h2> 볼트X FAQ & 유의사항 </h2>
+        <div className="faqHeader">
+            <p> FAQ </p>
+            <h2> OMail FAQ & 유의사항 </h2>
+        </div>
         {faqArray.map((faqItem) => {
             return (
                 <Slide

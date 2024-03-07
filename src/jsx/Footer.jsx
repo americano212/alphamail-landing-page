@@ -1,10 +1,11 @@
 import React from "react";
+import "./Footer.css"; 
 
 function Footer(){
     return (
         <div className="Footer">
     <ul> 
-        <li>boltX | (주)커피챗</li>
+        <li>Omail | (주)오메일</li>
         <li>주소: 서울특별시 성동구 왕십리로 125, 4층</li>
         <li>사업자등록번호: 439-87-02115</li>
         <li>통신판매업신고번호: 2021-서울성동-02009</li>

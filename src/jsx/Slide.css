@@ -1,0 +1,34 @@
+.Slide{
+    text-align:left; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    cursor: pointer; 
+}
+
+.Slide .question{
+    font-size: 18px; 
+    margin: 5px 0px; 
+    padding: 10px; 
+}
+
+.Slide .answer{
+    font-size: 16px; 
+    margin: 5px 0px; 
+    padding: 0px 10px; 
+    border: 1px solid rgb(236, 236, 236); 
+}
+
+.question {
+    display: flex; 
+    align-items: center;
+}
+
+.question .left {
+    font-weight: bold; 
+    justify-content: flex-start;
+    width: 100%; 
+}
+
+.question .right {
+    justify-content: flex-end;
+}

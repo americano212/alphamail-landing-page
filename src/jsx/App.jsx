@@ -20,7 +20,8 @@ function App(){
                 key={sectionItem.key}
                 id={sectionItem.id}
                 heading={sectionItem.heading}
-                content={sectionItem.content}
+                content1={sectionItem.content1}
+                content2={sectionItem.content2}
                 img={sectionItem.img}
                 text={sectionItem.text}
             />

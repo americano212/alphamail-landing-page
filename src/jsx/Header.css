@@ -1,0 +1,33 @@
+.Header {
+    margin: auto;  
+    padding-left: 360px;
+    padding-right: 180px;
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+    display: flex; 
+    background-color: #fcfcfd;
+    background-image: url("/public/banner-bg.png");
+}
+
+
+
+.Header h1 {
+    font-size: 56px; 
+    color: white;
+}
+
+.Header p {
+    font-size: 20px;
+    color: white; 
+}
+
+.Header b{
+    color: #599ee9;
+}
+
+.header_cta button{
+    margin-top: 30px; 
+    background-color: #599ee9;
+    color: white; 
+    border: solid 1px rgb(20, 20, 20); 
+}

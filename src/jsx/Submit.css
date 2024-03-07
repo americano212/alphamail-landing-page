@@ -1,0 +1,36 @@
+
+div.Submit {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.Submit button {
+    text-align: center;
+    font-size: 14px; 
+    font-weight: bold; 
+    height: 40px;
+    padding: 6px; 
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 16px 0 rgba(166, 168, 5, 0.15);
+    background-color: rgb(226, 226, 226);
+    border: 0 solid; 
+    color:gray; 
+    margin-top: 40px; 
+}
+
+
+.Submit .header {
+    height: 100px; 
+    margin: 20px; 
+    width: 50%; 
+    padding: 2rem; 
+    margin-bottom: 40px; 
+}
+
+.Submit .text{ 
+    font-size: 16px; 
+    color: rgb(160, 160, 160);
+    margin-bottom: 8px; 
+}

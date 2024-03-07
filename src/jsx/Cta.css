@@ -1,0 +1,14 @@
+.Cta{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 14px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.15);
+    border: 1px solid rgb(200, 200, 200); 
+
+}
+
