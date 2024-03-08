@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 600px;
-
+    min-width: 592px; 
 }
 
 .Section h2 {
@@ -89,3 +89,12 @@
 .Section3 b {
     color: #599ee9;
 }
+
+
+/*
+@media (max-width: 520px) {
+    .Section img{
+        width: 100%; 
+    }
+}
+*/

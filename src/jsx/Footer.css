@@ -5,6 +5,11 @@
     margin-bottom: 0px; 
     padding: 10px 0px; 
     background-color: #1e2836;
+    min-width:592px;
+}
+
+.Footer ul {
+    padding: 0px; 
 }
 
 .Footer li  {
