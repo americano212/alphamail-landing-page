@@ -26,7 +26,8 @@ div.Submit {
     margin: 20px; 
     width: 50%; 
     padding: 2rem; 
-    margin-bottom: 40px; 
+    margin-bottom: 60px; 
+    margin-top: 0px; 
 }
 
 .Submit .text{ 
