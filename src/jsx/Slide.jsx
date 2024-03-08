@@ -14,7 +14,7 @@ function Slide(props){
         <div className="Slide">
             <div className="question" onClick={hanldeClick} aria-controls="example-collapse-text" aria-expanded={visible}> 
                 <div className="left">{props.question}</div>
-                <div className="right"></div>
+                <div className="right"><img src="/chevron-down.svg" alt="image" /></div>
             </div>
             <div className="answer hidden" >
                 <Collapse in={visible}>

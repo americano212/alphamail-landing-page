@@ -5,6 +5,7 @@
     padding-top: 80px; 
     padding-bottom: 80px; 
     display: flex; 
+    gap: 70px; 
     background-color: #fcfcfd;
     background-image: url("/public/banner-bg.png");
 }
@@ -30,4 +31,11 @@
     background-color: #599ee9;
     color: white; 
     border: solid 1px rgb(20, 20, 20); 
+}
+
+.Header img {
+    justify-content: flex-end;
+    padding-left: 30px; 
+    width: 450px; 
+    height: 380px; 
 }
