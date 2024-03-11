@@ -26,7 +26,7 @@ function Header(){
         </div>
 
         <div className="right">
-            <img src="/mail.png" alt="image" />
+            <img src="/mail.png" alt="mail icon" />
         </div>
         </div>) ; 
 }

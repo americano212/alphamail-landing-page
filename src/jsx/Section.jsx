@@ -10,7 +10,7 @@ function Section(props){
         <h2>{props.heading.slice(0,4)}<b>{props.heading.slice(4,6)}</b>{props.heading.slice(6)}</h2>
         <p>{props.content1}</p>
         <p>{props.content2}</p>
-        <img src={props.img} alt="image" />
+        <img src={props.img} alt={props.alt} />
         <Cta 
             id={props.id} 
             text={props.text}
