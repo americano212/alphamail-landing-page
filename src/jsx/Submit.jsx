@@ -36,7 +36,7 @@ function Submit() {
       <p className="text">가장 먼저 정보를 얻어보세요!</p>
     </div>
 
-    <form class="w-50 p-3"
+    <form
       onSubmit={(event) => {
         event.preventDefault();
       }}
