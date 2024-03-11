@@ -40,18 +40,18 @@
 }
 
 
-.Section2 {
+.Section2, .Section4 {
     margin-top:0px; 
     background-color: #fcfcfd; 
     border-radius: 5px;
 }
 
 
-.Section2 img {
+.Section2 img, .Section4 img {
     border-radius: 5px;
 }
 
-.Section2 button{
+.Section2 button, .Section4 button{
     margin-top: 30px; 
     background-color: #fcc657;
     color: rgb(30, 30, 30); 
@@ -59,34 +59,34 @@
 }
 
 
-.Section2 b {
+.Section2 b, .Section4 b {
     color: #EEA120;
 }
 
-.Section3 { 
+.Section3, .Section5 { 
     background-image: url("/public/banner-bg.png");
 }
 
-.Section3 h2 {
+.Section3 h2, .Section5 h2 {
     color: white; 
 }
 
-.Section3 p {
+.Section3 p, .Section5 p {
     color: white; 
 }
 
-.Section3 img {
+.Section3 img, .Section5 img {
     border-radius: 5px;
 }
 
-.Section3 button{
+.Section3 button, .Section5 button{
     margin-top: 30px; 
     background-color: #599ee9;
     color: white; 
     border: solid 1px rgb(20, 20, 20); 
 }
 
-.Section3 b {
+.Section3 b, .Section5 b {
     color: #599ee9;
 }
 

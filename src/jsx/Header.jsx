@@ -10,11 +10,11 @@ function Header(){
         <div className="left">
         <div>
             <h1>
-                이메일에    <br/>
-                <b>AI를</b> <br/>
-                더하다
+                <b>꼭</b> 필요한 메일만    <br/>
+                <b>집중</b>할 수 있는 <br/>
+                <b>포커스</b> 메일
             </h1>
-            <p>O(ICG)Mail은 이메일의 새로운 경험을 제시합니다.  <br/>메일 자동생성, 스팸 필터와 같은 추가 기능을 한곳에서 활용해 보세요. </p>
+            <p>O(ICG)Mail은 이메일의 새로운 경험을 제시합니다.  <br/>메일 자동 생성, 자동 답장, 스팸 필터와 같은 모든 기능을 한곳에서 활용해 보세요. </p>
         </div>
         <div className="header_cta">
             <Cta 
