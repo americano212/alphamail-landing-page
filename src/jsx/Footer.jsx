@@ -6,7 +6,7 @@ function Footer(){
     return (
         <div className="Footer">
     <ul> 
-        <li>Omail | (주)오메일</li>
+        <li>α-mail | (주)알파메일</li>
         <li>Copyright © {date}</li>
     </ul>
         </div>);

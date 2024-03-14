@@ -12,7 +12,7 @@ function Submit() {
   */
   const navigate = useNavigate();
   function handleClick(){
-    navigate("/", { replace: true}); 
+    navigate("/"); 
   }
 
 
@@ -31,7 +31,7 @@ function Submit() {
     <div className="header">
       <button onClick={handleClick} className="backLink">{"< 뒤로가기"}</button>
 
-      <p className="text">오메일(OMail)을 가장 먼저 사용해보고 싶으신가요?</p>
+      <p className="text">알파메일(α-Mail)을 가장 먼저 사용해보고 싶으신가요?</p>
 
       <p className="text">가장 먼저 정보를 얻어보세요!</p>
     </div>

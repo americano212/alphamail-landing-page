@@ -9,7 +9,7 @@ function Faq(){
     <div className="Faq">
         <div className="faqHeader">
             <p> FAQ </p>
-            <h2> OMail FAQ & 유의사항 </h2>
+            <h2> α-Mail FAQ & 유의사항 </h2>
         </div>
         {faqArray.map((faqItem) => {
             return (
