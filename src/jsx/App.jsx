@@ -6,12 +6,13 @@ import Faq from "./Faq";
 import { useNavigate } from "react-router-dom";
 import Router from "./Router"; 
 import section_Array from "../assets/section-Array"
+import { useAirBridge } from "../lib/airbridge";
 
 
 const sectionArray = section_Array; 
 
 function App(){
-    
+    useAirBridge();
     return <div className="App">
     <Header />
     {sectionArray.map((sectionItem) => {
