@@ -9,3 +9,9 @@ export const useAirBridge = () => {
     });
   }, []);
 };
+
+export const event = (category, {action, label, value} ) => {
+  airbridge.events.send(category,{
+    action, label, value
+  });
+}
